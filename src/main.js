@@ -7,12 +7,17 @@ function capitalize(str) {
   const auxArray = str.currentTarget.value.split(" ");
   const capitalized = auxArray
     .map((item) => {
-      return item.charAt(0).toUpperCase() + item.slice(1);
+      return prohibetedWord.includes(item.toLowerCase())
+        ? item.toLowerCase()
+        : item.charAt(0).toUpperCase() + item.slice(1);
     })
     .join()
     .replaceAll(",", " ");
-
   str.currentTarget.value = capitalized;
+}
+
+function lowerCase(item) {
+  return item.toLowerCase();
 }
 
 inputText.addEventListener("input", capitalize);
