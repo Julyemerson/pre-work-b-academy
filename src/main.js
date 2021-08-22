@@ -3,46 +3,24 @@ import "./form";
 const form = document.querySelector("[data-js='form-input']");
 const divColors = document.querySelector("[data-js='colors-selected']");
 const select = document.createElement("select");
+const colors = ["red", "green", "blue", "orange", "black"];
 
-const blue = document.createElement("option");
-blue.setAttribute("data-js", "azul");
-const orange = document.createElement("option");
-orange.setAttribute("data-js", "laranja");
-const green = document.createElement("option");
-green.setAttribute("data-js", "verde");
-const red = document.createElement("option");
-red.setAttribute("data-js", "vermelho");
-const black = document.createElement("option");
-black.setAttribute("data-js", "preto");
+colors.forEach((color) => {
+  const option = document.createElement("option");
+  option.value = `${color}`;
+  option.textContent = `${color}`;
+  select.appendChild(option);
+});
 
-blue.text = "azul";
-orange.text = "laranja";
-green.text = "verde";
-red.text = "vermelho";
-black.text = "preto";
-
-select.add(blue);
-select.add(orange);
-select.add(green);
-select.add(red);
-select.add(black);
-
-select.setAttribute("multiple", true);
+select.setAttribute("multiple", "");
 form.appendChild(select);
 
 select.addEventListener("change", (e) => {
-  const colorsElements = [...e.target.selectedOptions].map((element) => {
+  divColors.innerHTML = "";
+  return [...e.target.selectedOptions].map((element) => {
     addBoxColors(element);
     return element;
   });
-
-  const elementsToRemove = [...e.currentTarget].filter((opt) => {
-    if (!opt.selected) {
-      return removeBoxColors(opt);
-    }
-  });
-
-  console.log(elementsToRemove);
 });
 
 function addBoxColors(element) {

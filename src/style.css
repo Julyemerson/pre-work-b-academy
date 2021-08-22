@@ -7,7 +7,7 @@
   margin-top: 60px;
 }
 
-.vermelho {
+.red {
   width: 100px;
   height: 100px;
   background-color: red;
@@ -15,7 +15,7 @@
   margin: 10px;
 }
 
-.verde {
+.green {
   width: 100px;
   height: 100px;
   background-color: green;
@@ -23,7 +23,7 @@
   margin: 10px;
 }
 
-.azul {
+.blue {
   width: 100px;
   height: 100px;
   background-color: blue;
@@ -31,7 +31,7 @@
   margin: 10px;
 }
 
-.laranja {
+.orange {
   width: 100px;
   height: 100px;
   background-color: orange;
@@ -39,7 +39,7 @@
   margin: 10px;
 }
 
-.preto {
+.black {
   width: 100px;
   height: 100px;
   background-color: black;
