@@ -52,3 +52,23 @@
   display: flex;
   flex-direction: row;
 }
+
+.form-cars {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.form-cars div {
+  margin: 10px;
+  padding: 10px;
+}
+
+.form-cars button {
+  margin: 10px;
+}
