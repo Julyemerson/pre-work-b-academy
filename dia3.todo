@@ -1,0 +1,6 @@
+  Dia3:
+        ✔ Via JavaScript, adicione ao formulário um select do tipo multiple com algumas cores para seleção.
+        ✔ Crie opções para, pelo menos, 5 cores diferentes.
+         Conforme as cores vão sendo selecionadas, você deverá adicionar elementos no HTML com as cores que foram selecionadas. Esses elementos podem ser divs mesmo, de tamanho 100px x 100px, uma ao lado da outra, ou como você quiser exibir.
+        ☐ Fique à vontade para estilizar como achar melhor: o que eu preciso que você faça é apenas exibir na tela, de forma visual, todas as cores que foram selecionadas, enquanto elas estão sendo selecionadas.
+        ☐ Exemplo: se apenas uma cor for selecionada, um quadrado pintado com essa cor deve ser exibido na tela. Se duas cores forem selecionadas, dois quadrados devem aparecer na tela, um com cada uma das cores selecionadas. Se houver uma "desseleção", a cor que foi "desselecionada" deve ser removida da tela.

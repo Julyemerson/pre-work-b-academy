@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Dia 3</title>
   </head>
   <body>
-    <form action="">
-      <label for="person-name">Nome:</label>
-      <input id="person-name" data-js="inputName" type="text" />
-    </form>
+    <div id="app">
+      <form data-js="form-input">
+        <label for="person-name">Nome:</label>
+        <input id="person-name" data-js="inputName" type="text" />
+      </form>
+      <div class="colors-selected" data-js="colors-selected"></div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
